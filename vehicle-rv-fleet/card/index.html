@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>South Carolina Mold Solutions — Auto Detailing</title>
+<meta name="description" content="Digital business card for South Carolina Mold Solutions' Premium Auto Detailing division. Save to contacts or visit the website.">
+<link rel="icon" type="image/png" href="logo-64.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --black: #0a0a0a;
+    --panel: #141414;
+    --green: #40a703;
+    --green-bright: #82dc14;
+    --white: #ffffff;
+    --ink-soft: #a7b3a3;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; }
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: radial-gradient(900px 600px at 50% -10%, #1a2a10 0%, var(--black) 70%);
+    color: var(--white);
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 20px calc(28px + env(safe-area-inset-bottom));
+    position: relative;
+    overflow-x: hidden;
+  }
+  .card { position: relative; z-index: 1; width: 100%; max-width: 380px; text-align: center; }
+
+  .logo { width: 128px; height: auto; margin: 0 auto 18px; filter: drop-shadow(0 10px 24px rgba(0,0,0,0.6)); }
+
+  h1 {
+    font-family: 'Anton', 'Inter', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: var(--white);
+    text-transform: uppercase;
+    line-height: 1.15;
+  }
+  .role { font-size: 14.5px; font-weight: 700; color: var(--green-bright); margin-top: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .tagline { font-size: 13px; color: var(--ink-soft); margin-top: 4px; }
+
+  .actions { display: flex; flex-direction: column; gap: 12px; margin-top: 28px; }
+  .btn {
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    padding: 15px 20px; border-radius: 10px;
+    font-weight: 800; font-size: 15px; text-transform: uppercase; letter-spacing: 0.3px;
+    text-decoration: none; border: 1.5px solid transparent;
+    transition: transform 0.15s ease, background 0.15s ease;
+  }
+  .btn:active { transform: scale(0.98); }
+  .btn-green { background: var(--green-bright); color: #0a1400; }
+  .btn-green:hover { background: #9aef2c; }
+  .btn-line { background: rgba(255,255,255,0.05); border-color: rgba(130,220,20,0.4); color: var(--green-bright); }
+  .btn-line:hover { border-color: var(--green-bright); background: rgba(255,255,255,0.08); }
+
+  .quick { display: flex; gap: 12px; margin-top: 16px; }
+  .quick a {
+    flex: 1; display: flex; flex-direction: column; align-items: center; gap: 6px;
+    padding: 12px 8px; border-radius: 10px;
+    background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1);
+    color: #d9e2d4; text-decoration: none; font-size: 11px; font-weight: 700; letter-spacing: 0.2px; text-transform: uppercase;
+  }
+  .quick svg { color: var(--green-bright); }
+
+  .divider { height: 1px; background: rgba(255,255,255,0.1); margin: 26px 0 20px; }
+
+  .price-teaser { display: flex; flex-direction: column; gap: 10px; text-align: left; }
+  .price-teaser .row { display: flex; justify-content: space-between; font-size: 13.5px; color: #d9e2d4; }
+  .price-teaser .row span:last-child { font-weight: 800; color: var(--green-bright); }
+
+  .veteran {
+    margin-top: 22px; display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(130,220,20,0.08); border: 1px solid rgba(130,220,20,0.35);
+    padding: 8px 14px; border-radius: 999px; font-size: 11.5px; font-weight: 800; letter-spacing: 0.5px;
+    color: var(--green-bright); text-transform: uppercase;
+  }
+
+  .toast {
+    position: fixed; left: 50%; bottom: 24px; transform: translate(-50%, 12px);
+    background: var(--green-bright); color: #0a1400; font-weight: 800; font-size: 13px; text-transform: uppercase;
+    padding: 10px 18px; border-radius: 999px;
+    opacity: 0; pointer-events: none; transition: opacity 0.25s ease, transform 0.25s ease; z-index: 5;
+  }
+  .toast.show { opacity: 1; transform: translate(-50%, 0); }
+</style>
+</head>
+<body>
+
+  <div class="card">
+    <img class="logo" src="logo-400.png" alt="South Carolina Mold Solutions">
+    <h1>South Carolina<br>Mold Solutions</h1>
+    <div class="role">Premium Auto Detailing</div>
+    <div class="tagline">Vehicle &middot; RV &middot; Fleet Division</div>
+
+    <div class="actions">
+      <a class="btn btn-green" href="sc-mold-solutions-auto.vcf" download="South Carolina Mold Solutions.vcf">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg>
+        Save to Contacts
+      </a>
+      <a class="btn btn-line" href="https://scmoldsolutions.com/vehicle-rv-fleet/" target="_blank" rel="noopener">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        Get a Free Estimate
+      </a>
+    </div>
+
+    <div class="quick">
+      <a href="tel:+18644310400">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call
+      </a>
+      <a href="sms:+18644310400">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        Text
+      </a>
+      <a href="mailto:scmoldsolutions@outlook.com">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+        Email
+      </a>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="price-teaser">
+      <div class="row"><span>Car wash</span><span>From $45</span></div>
+      <div class="row"><span>RV / camper wash</span><span>From $9/ft</span></div>
+      <div class="row"><span>Fleet service call</span><span>From $200</span></div>
+    </div>
+
+    <div class="veteran">&#9733; Veteran Owned &amp; Operated</div>
+  </div>
+
+  <div class="toast" id="toast">Contact saved — check your Contacts app</div>
+
+<script>
+  document.querySelector('a[download]').addEventListener('click', () => {
+    const t = document.getElementById('toast');
+    t.classList.add('show');
+    setTimeout(() => t.classList.remove('show'), 3200);
+  });
+</script>
+
+</body>
+</html>
